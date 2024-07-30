@@ -1,99 +1,123 @@
- *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 10px;
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     box-sizing: border-box;
+ }
 
-}
-.to-do{
-    background: #fff;
-    width: 600px;
-    padding-inline: auto;
-    margin: auto;
-    margin-block: 100px;
-    padding: 40px;
-    border-radius:10px ;
-}
+ .container {
+     width: 100%;
+     min-height: 100vh;
+     background: linear-gradient(135deg, #153677, #4e085f);
+     padding: 10px;
 
-.to-do h2{
-    padding-bottom: 20px;
-    font-size: 30px;
-}
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    border-radius: 30px;
-    margin-bottom: 25px;
-    background-color: #ececec;
-}
- input{
-    font-size: 17px;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    width: 400px;
-   
-      
-}
-.row button{
-    background-color: rgb(255, 123, 0);
-    border: none;
-    outline: none;
-    font-size: 16px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 30px; 
-} 
+ }
 
-li{
-    /* text-align: start; */
-    font-size: 18px;
-    padding:12px 8px 12px 50px;
-    list-style: none;
-    position: relative;
-    cursor: pointer;
-    max-width: 500px;
-}
-li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(unchecked.png);
-    background-position: center;
-    background-size: cover;
-    top: 12px;
-    left: 8px;
-}
+ .to-do {
+     background: #fff;
+     width: 100%;
+     max-width: 540px;
+     padding-inline: auto;
+     /* margin: auto; */
+     margin: 50px auto;
+     padding: 40px;
+     border-radius: 10px;
+ }
 
-ul li.checked{
-    color: #555;
-    text-decoration: line-through;
-    
-}
-ul li.checked::before{
-    background-image: url(checked.png);
-}
-ul li span{
-    position: absolute;
-    right: 0;
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-    top: 5px;
-    line-height: 40px;
-    text-align: center;
-}
-ul li span:hover{
-    background-color: #edeef0;
-}
+ .to-do h2 {
+     padding-bottom: 20px;
+     font-size: 30px;
+ }
+
+ .row {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 20px;
+     border-radius: 30px;
+     margin-bottom: 25px;
+     background-color: #ececec;
+ }
+
+ input {
+     font-size: 17px;
+     border: none;
+     outline: none;
+     background: transparent;
+     padding: 10px;
+     width: 400px;
+
+
+ }
+
+ .row button {
+     background-color: rgb(255, 123, 0);
+     border: none;
+     outline: none;
+     font-size: 16px;
+     width: 100px;
+     padding: 10px;
+     border-radius: 30px;
+ }
+
+ li {
+     /* text-align: start; */
+     font-size: 18px;
+     padding: 12px 8px 12px 50px;
+     list-style: none;
+     position: relative;
+     cursor: pointer;
+     max-width: 500px;
+ }
+
+ li::before {
+     content: '';
+     position: absolute;
+     height: 28px;
+     width: 28px;
+     border-radius: 50%;
+     background-image: url(unchecked.png);
+     background-position: center;
+     background-size: cover;
+     top: 12px;
+     left: 8px;
+ }
+
+ ul li.checked {
+     color: #555;
+     text-decoration: line-through;
+
+ }
+
+ ul li.checked::before {
+     background-image: url(checked.png);
+ }
+
+ ul li span {
+     position: absolute;
+     right: 0;
+     font-size: 22px;
+     width: 40px;
+     height: 40px;
+     top: 5px;
+     line-height: 40px;
+     text-align: center;
+ }
+
+ ul li span:hover {
+     background-color: #edeef0;
+ }
+
+ @media screen and (max-width:428px) {
+     .to-do {
+         width: 100%;
+         max-width: 300px;
+         padding-inline: auto;
+         margin: 50px auto;
+         padding: 40px;
+         border-radius: 10px;
+     }
+     input{
+        width: 150px;
+     }
+ }
